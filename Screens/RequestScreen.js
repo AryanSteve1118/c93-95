@@ -286,7 +286,7 @@ export default class RequestScreen extends Component {
               style={styles.button}
               onPress={() => {
                 this.sendNotification();
-                this.updateGiftRequestStatus();
+                // this.updateGiftRequestStatus();
                 this.receivedGifts(this.state.requestedGiftName);
               }}
             >
@@ -329,7 +329,7 @@ export default class RequestScreen extends Component {
             value={this.state.giftType}
           />
          
-            <View style={{ alignItems: "center" }}>
+            <KeyboardAvoidingView style={{ alignItems: "center" }}>
               <Input
                 style={styles.textInput}
                 containerStyle={{ marginTop: RFValue(30) }}
@@ -355,11 +355,10 @@ export default class RequestScreen extends Component {
               >
                 <Text
                   style={styles.requestbuttontxt}
-                >
-                  Request
+                >Request
                 </Text>
               </TouchableOpacity>
-            </View>
+            </KeyboardAvoidingView>
           
         </View>
       </View>
@@ -439,7 +438,7 @@ const styles = StyleSheet.create({
   requestbuttontxt:{
     fontSize: RFValue(20),
     fontWeight: "bold",
-    color: "#fff",
+    color: "#56f567",
   },
   button: {
     width: "75%",

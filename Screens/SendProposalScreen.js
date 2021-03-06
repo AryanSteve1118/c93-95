@@ -6,6 +6,7 @@ import * as Permissions from "expo-permissions";
 import firebase from "firebase";
 import db from "../config";
 import { Icon } from "react-native-elements";
+import {RFValue} from 'react-native-responsive-fontsize'
 
 export default class SendProposalScreen  extends React.Component{
   state = {
@@ -96,4 +97,10 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    formTextInput: {
+      width: "75%",
+      height: RFValue(35),
+      borderWidth: 1,
+      padding: 10,
+    },    
 });

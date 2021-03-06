@@ -6,6 +6,8 @@ import MyGiftScreen from '../Screens/MyGiftScreen';
 import NotificationScreen from '../Screens/Notification';
 import SettingScreen from '../Screens/Setting';
 import MyReceivedGiftScreen from '../Screens/MyReceivedGiftScreen';
+import SendProposalScreen from '../Screens/SendProposalScreen';
+import RecievedProposalScreen from '../Screens/RecievedProposalScreen';
 
 import {Icon} from 'react-native-elements';
 
@@ -24,7 +26,14 @@ export const AppDrawerNavigator = createDrawerNavigator({
   },
   Setting : {
     screen : SettingScreen
+  },
+  SendProposal : {
+    screen : SendProposalScreen
+  },
+  RecievedProposal : {
+    screen : RecievedProposalScreen
   }
+
 },
   {
     contentComponent:CustomSideBarMenu

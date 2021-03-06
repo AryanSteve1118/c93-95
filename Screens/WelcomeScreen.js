@@ -207,7 +207,7 @@ export default class WelcomeScreen extends Component {
     return (
       <View style={styles.container}>
         <View>
-       <Text styles={{fontSize:30,alignItem:"center"}}>NEW GIFTS</Text>
+       <Text style={{fontSize:30,marginLeft:325,marginTop:250,fontFamily:"cursive"}}>NEW GIFTS</Text>
        </View>
         {this.showModal()}
         <View style={{ flex: 0.25 }}>
